@@ -1,0 +1,17 @@
+Servos
+	1) Servo 1-2 (PIN 3)
+	2) Servo 3-4 (PIN 6)
+
+BT
+	TXD (PIN 10)
+	RXD (PIN 11)
+
+RTC
+	VCC1*
+	SCLK (PIN 5)
+	I/O (PIN 4)
+	RST (PIN 2)
+
+BUZZER
+	VCC (PIN 8)
+	GND*

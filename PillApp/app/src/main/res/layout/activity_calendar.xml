@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3A3A"
+    tools:context=".Calendar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="50px">
+
+            <Spinner
+                android:id="@+id/spn_dias"
+                style="@android:style/Widget.Spinner"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:background="#FFFFFF"
+                android:spinnerMode="dropdown"
+                tools:listheader="Dias" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spn_pastillas"
+                    style="@android:style/Widget.Spinner"
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20px"
+                    android:background="#FFFFFF"
+                    android:spinnerMode="dropdown"
+                    tools:listheader="Dias" />
+
+                <EditText
+                    android:id="@+id/et_cant"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20px"
+                    android:backgroundTint="#FFFFFF"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cantidad"
+                    android:inputType="numberSigned"
+                    android:maxLength="2"
+                    android:textColor="#FFFFFF"
+                    android:textColorHighlight="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:amPmBackgroundColor="#000000"
+                android:amPmTextColor="#000000"
+                android:backgroundTint="#000000"
+                android:headerBackground="#000000"
+                android:numbersSelectorColor="#000000"
+                android:timePickerMode="clock">
+
+            </TimePicker>
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200px"
+                android:background="#FFFFFF"
+                android:text="GUARDAR"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PillApp</string>
+
+    <string-array name="dias">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sabado</item>
+        <item>Domingo</item>
+    </string-array>
+
+    <string-array name="pastillas">
+        <item>Pastilla 1</item>
+        <item>Pastilla 2</item>
+        <item>Pastilla 3</item>
+        <item>Pastilla 4</item>
+    </string-array>
+</resources>
